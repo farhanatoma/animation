@@ -1,0 +1,39 @@
+* {
+  border-box: box-sizing;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: #CCA085;
+}
+
+.text {
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 70px;
+  font-size: 70px;
+  letter-spacing: normal;
+  animation: spaced 2s ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes spaced {
+  from {
+    background-image: 
+    linear-gradient(45deg, red, purple);
+  }
+  to {
+    letter-spacing: 120px;
+    background-image: 
+    linear-gradient(45deg, yellow, brown, green);
+  }
+}
